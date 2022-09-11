@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+}
+
+
+header {
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+}
+
+header a {
+    color: #ebebeb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li + li {
+    margin-left: 20px;
+}
+
+header a:hover {
+    color: #f13239;
+}
+
+.banner {
+    height: 320px;
+    padding: 24px;
+
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dots {
+    display: flex;
+    margin-top: 10px;
+}
+
+.dots span {
+    display: inline-block;
+    background-color: #ebebeb;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+
+.dots span + span {
+    margin-left: 16px;
+}
+
+.dots .active {
+    background-color: red;
+}
+
+.conteudo1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.conteudo1 img {
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.conteudo2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px;
+    margin-top: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.conteudo2 img {
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+footer {
+    background-color: #111111;
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+footer p {
+    color: #ebebeb;
+}
+
+@media screen and (max-width: 789px) {
+    
+    .banner {
+        height: 120px;
+        padding: 24px;
+    
+        background-image: url(banner.jpg);
+        background-size: cover;
+        background-position: center 50%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    h1{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .conteudo1 {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        margin: 0%;
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: justify;
+    }
+    
+    .conteudo1 img {
+        width: 75%;
+        border-radius: 50%;
+        margin: 30px;
+    }
+
+    .conteudo2 {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+        margin-top: 0px;
+        text-align: justify;
+    }
+    
+    .conteudo2 img {
+        width: 75%;
+        border-radius: 50%;
+        margin: 30px;
+    }
+    
+}
